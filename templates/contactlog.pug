@@ -1,0 +1,49 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    title Contact Form
+    link#cssSheet(href='http://localhost:4131/css/main.css' rel='stylesheet')
+    script(src='http://localhost:4131/js/main.js')
+    script(src='http://localhost:4131/js/table.js')
+    .navbar
+        .card
+            a(href='http://localhost:4131/main') The Hotel
+        .card
+            a(href='http://localhost:4131/testimonies') Testimonies
+        .card
+            a(href='http://localhost:4131/contact') Contact Form
+        .card
+            a(href='http://localhost:4131/admin/contactlog') Contact Log
+        .card
+            a(onclick='toggle_style()')  Dark Mode 
+    .setSale
+        form#form2(action='http://localhost:4131/api/sale' method='post')
+            h2 Set Sale
+            label(for='sale') Sale:
+            input#sale(type='text' name='sale')
+            br
+            button(onclick='setSale(event)' type='submit' form='form2' value='set') Set
+            button(onclick='deleteSale(event)' type='submit' form='form2' value='delete') Delete
+    .saleConfCard
+    .deleteConfCard
+    h1 Contact Log
+    
+    table#contactLog
+        tr
+            th Name
+            th Email
+            th Date
+            th Age Range
+            th Ocean View
+            th Animal
+            th Delete 
+            each contact in contacts 
+                tr
+                    td= contact.name
+                    td= contact.email
+                    td= contact.date
+                    td= contact.ageRange
+                    td= contact.oceanview
+                    td= contact.animal
+                    td
+                        button(onclick="deleteRow(this, '" + contact.id + "')", type='delete', form='form1', value='Delete') Delete

@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Young Serif&display=swap');
+body {
+    background-color: rgb(204, 216, 226);
+    padding:0;
+    margin:0;
+    text-align: center;
+}
+strong {
+    color: rgb(87, 85, 236);
+}
+em {
+    color: rgb(194, 194, 204);
+}
+div.navbar {
+    background-color: rgb(142, 142, 214); 
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: center; 
+}
+div.card{
+    overflow: hidden;
+    background-color: rgb(165, 209, 245);
+    border-radius: 4em;
+    height: 2em;
+    margin: 1em;
+    border-width: 0;
+    width: 10em;
+    display: inline-block; 
+}
+div.card a{
+    font-family: 'Helvetica';
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    width: 50%;
+}
+div.card a:hover {
+    background-color: #bdc4ec; 
+    border-radius: 4em; 
+}
+h1{
+    font-family: 'Young Serif';
+    font-weight: bold;
+    color: black;
+    font-size: 50px;
+}
+div.textbox {
+    width: 50%;
+    padding: 10px;
+    background-color: rgb(142, 142, 214);
+    display: block;
+    overflow: hidden;
+    border-radius: 1em;
+    margin: 1em;
+    border-width: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid rgb(30, 30, 48);
+}
+
+/* Main Page */
+img {
+    width: 75%;
+    height: 10%;
+    border: 3px solid #bbb;
+}
+ol {
+    text-align: center;
+    list-style-position: inside;
+}
+li {
+    text-indent: 10%;
+    text-align: left;
+}
+div.saleCard {
+    font-family: 'Helvetica';
+    font-weight: bold;
+    width: 40em;
+    padding: 10px;
+    background-color: rgb(120, 199, 252);
+    display: block;
+    overflow: hidden;
+    border-radius: 1em;
+    margin: 1em;
+    border-width: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Testimonials page */
+div.video {
+    padding: 10px;
+    width: 600px; 
+    height: 350px; 
+    background-color: rgb(142, 142, 214);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 1em;
+    border-width: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box; 
+}
+div.testimonials {
+    display: flex;
+    justify-content: center;
+}
+div.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1em; 
+}
+div.review {
+    width: 20em;
+    height: 8em;
+    border-radius: 1em;
+    margin: 1em 0;
+    background-color: rgb(182, 203, 219);
+    border: 2px solid blue;
+    padding: 5px; 
+}
+p.review-body {
+    text-align: left;
+}
+p.reviewer-name {
+    text-align: right;
+}
+
+/* Contact Log Page */
+table {
+    margin: 0 auto;
+    width: auto;
+    justify-content: center;
+    border-collapse: collapse;
+    border: 4px solid blue;
+}
+
+th, td {
+    border: 1px solid blue;
+    padding: 8px;
+    justify-content: center;
+}
+tr:nth-child(even) {
+    background-color: rgb(166, 215, 252);
+}
+tr:nth-child(odd) {
+    background-color: rgb(136, 201, 250);
+}
+div.setSale {
+    width: 20em;
+    padding: 10px;
+    background-color: rgb(142, 142, 214);
+    display: block;
+    overflow: hidden;
+    border-radius: 1em;
+    margin: 1em;
+    border-width: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid rgb(30, 30, 48);
+}
+div.saleConfCard {
+    font-family: 'Helvetica';
+    font-weight: bold;
+    width: 40em;
+    padding: 10px;
+    background-color: rgb(120, 199, 252);
+    display: block;
+    overflow: hidden;
+    border-radius: 1em;
+    margin: 1em;
+    border-width: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.deleteConfCard {
+    font-family: 'Helvetica';
+    font-weight: bold;
+    width: 40em;
+    padding: 10px;
+    background-color: rgb(255, 155, 155);
+    display: block;
+    overflow: hidden;
+    border-radius: 1em;
+    margin: 1em;
+    border-width: 1px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Contact Page */
+
+div.formBox  {
+    width: 20em;
+    padding: 10px;
+    background-color: rgb(142, 142, 214);
+    display: block;
+    overflow: hidden;
+    border-radius: 1em;
+    margin: 1em;
+    border-width: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid rgb(30, 30, 48);
+}
