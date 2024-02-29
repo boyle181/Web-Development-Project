@@ -1,0 +1,46 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    link#cssSheet(href='http://localhost:4131/css/main.css' rel='stylesheet')
+    script(src='http://localhost:4131/js/main.js')
+    script(src='http://localhost:4131/js/contact.js')
+    title Contact Form
+    .navbar
+        .card
+            a(href='http://localhost:4131/main') The Hotel
+        .card
+            a(href='http://localhost:4131/testimonies') Testimonies
+        .card
+            a(href='http://localhost:4131/contact') Contact Form
+        .card
+            a(href='http://localhost:4131/admin/contactlog') Contact Log
+        .card
+            a(onclick='toggle_style()')  Dark Mode 
+    h1 Interest Form
+    .formBox
+        form#form1(action='http://localhost:4131/contact' method='post')
+            label(for='name') Name:
+            input#name(type='text' name='name')
+            br
+            label(for='email') Email:
+            input#email(type='email' name='email')
+            br
+            label(for='date') Attendance Date:
+            input#date(type='date' name='date' value='2023-09-27')
+            br
+            label(for='ageRange') Age Range
+            select#ageRange(name='ageRange')
+                option(value='--SELECT--') --SELECT--
+                option(value='18-25') 18-25
+                option(value='26-35') 26-35
+                option(value='36-55') 36-55
+                option(value='56-') 56-
+            br
+            input#oceanview(type='checkbox' name='oceanview' value='oceanview')
+            label(for='oceanview') Oceanview Room
+            br
+            label(for='animal') Animal:
+            input#animal(type='text' name='animal')
+            br
+            p#stayLength
+            button(type='submit' form='form1' value='Submit') Submit

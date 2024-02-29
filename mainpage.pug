@@ -1,0 +1,40 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        link(href='http://localhost:4131/css/main.css' rel='stylesheet')
+        script(src='http://localhost:4131/js/main.js')
+        title The Hotel
+    body
+        .navbar
+            .card
+                a(href='http://localhost:4131/main') The Hotel
+            .card
+                a(href='http://localhost:4131/testimonies') Testimonies
+            .card
+                a(href='http://localhost:4131/contact') Contact Form
+            .card
+                a(href='http://localhost:4131/admin/contactlog') Contact Log
+            .card
+                a(onclick='toggle_style()')  Dark Mode 
+        .saleCard
+        h1 The Hotel
+        h2
+            | &quot;We wish you every success, and we hope you will return to the city as a couple.&quot;
+        p
+            strong The Hotel
+            |  is destination where the lonely are given a chance to find a partner.
+        .multi-media
+            img(src='http://localhost:4131/images/main.jpg' alt='The Lobster Poster')
+        .textbox
+            p
+                em Visitors
+                |  are given 45 days, if they have not found a partner by then they will be turned into an animal of their choosing.
+            h2 Offered Services: 
+            ol
+                li Private Room
+                li Benefits of Partnership Propaganda Presentations
+                li Dances and Events
+                li
+                    | Possible True Love 
+                    em (Animal Transformation if none found)

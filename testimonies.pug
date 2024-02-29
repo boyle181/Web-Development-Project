@@ -1,0 +1,39 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    link#cssSheet(href='http://localhost:4131/css/main.css' rel='stylesheet')
+    script(src='http://localhost:4131/js/main.js')
+    title Testimonials
+    .navbar
+        .card
+            a(href='http://localhost:4131/main') The Hotel
+        .card
+            a(href='http://localhost:4131/testimonies') Testimonies
+        .card
+            a(href='http://localhost:4131/contact') Contact Form
+        .card
+            a(href='http://localhost:4131/admin/contactlog') Contact Log
+        .card
+            a(onclick='toggle_style()')  Dark Mode 
+    h1 Testimonials
+    .video
+        iframe(width='560' height='315' src='https://www.youtube.com/embed/PYpycAcxEBQ?si=6PWrphspgOCidV9V' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')
+    .testimonials
+        .column
+            .review
+                p.review-body &quot;I found my husband here and we have lived happy together ever since!&quot;
+                p.reviewer-name - Hotel Manager
+            .review
+                p.review-body  &quot;neigh neigh niegh&quot;
+                p.reviewer-name - A horse
+            .review
+                p.review-body &quot;ruff ruff ruff!&quot;
+                p.reviewer-name - A dog
+        .column
+            .review
+                p.review-body
+                    | &quot;I found another man whose nosebleeds a lot just like mine, although his nose keeps getting broken aswell&quot;
+                p.reviewer-name - a woman with constant nosebleeds
+            .review
+                p.review-body &quot;quack quack quack&quot;
+                p.reviewer-name - a duck
